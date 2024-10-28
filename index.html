@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body>
+    <h1>My first Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magni quisquam exercitationem quae velit sapiente minima facilis culpa earum repellendus. </p>
+    <button id="btn">Next</button>
+
+    <button id="nextBtn">Next</button>
+    <img id="popupImg" src="./image/aziz1.jpg" alt="Popup Image" style="display: none; width: 200px; height: 200px;" />
+    
+
+
+
+
+
+
+    <script>
+        let heading = document.querySelector("h1")
+        heading.style.color="red"
+          heading.style.textAlign="center"
+
+        let para = document.querySelector("p");
+        para.style.display = 'none';
+        let btn=document.querySelector("button")
+        btn.style.marginLeft="400px"
+        btn.addEventListener("click", () => {
+    para.style.backgroundColor = 'red';
+    para.style.padding = "100px";
+    para.style.marginTop = "100px";
+    para.style.display = 'ruby'; 
+});
+
+const nextBtn = document.getElementById('nextBtn');
+const popupImg = document.getElementById('popupImg');
+
+nextBtn.addEventListener("click", () => {
+    popupImg.style.display = 'block'; // This will make the image visible
+});
+
+    </script>
+</body>
+</html>
